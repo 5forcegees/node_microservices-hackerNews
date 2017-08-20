@@ -8,7 +8,7 @@ newman.run({
         console.log("err: ", err);
     }
     // runSummary.run.executions.forEach(function(result){
-    //     // haven't been able to find a way to show the response body, seems like there should be
+    //     // haven't been able to find a way to show the response body, newman doesn't seem to
     //     // console.log('collection run complete!\nSummary: \n', result);
     // })
 });
