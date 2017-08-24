@@ -37,14 +37,32 @@ Structure:
                 cd postman/newman
                 # execute script
                 node newman.js
+      
+                
+Getting started:
 
-        
-##To Run Mocha and Generate Istanbul Reports
-
-```
-  istanbul cover _mocha -- -u exports -R spec
-```
-* will create ./coverage where report html will output
-* if you have any issues running istanbul try installing globally
+    // clone the gateway
+    // --depth 1 removes all but one .git commit history
+    git clone --depth 1 ssh://git@innersource.accenture.com/nmi/hackernews.git
+    
+    // change directory into the gateway
+    cd hackernews
 
 
+    // install the node modules and support libraries
+    npm install
+    
+    // start the application
+    npm start
+    
+    // make a request
+    Since there isn't a front end to this project you can use the included postman collection to make a request
+    
+    On *nix based systems you can also use this curl
+        curl -X GET \
+          http://127.0.0.1:3010/apigateway \
+          -H 'cache-control: no-cache' \
+          -H 'operation: latest' \
+          -H 'service: hackerNews'
+   
+    
