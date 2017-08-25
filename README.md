@@ -11,7 +11,8 @@ This is the hackerNews microservice for the node microservices app
                 returning to the front end app
             
         package.json - aside from the usual dependencies on npm modules we are adding our own custom libraries
-            they will be cloned from our repository when npm install is executed. Example:
+            they will be cloned from our repository when npm install is executed. 
+            Example:
                   "dependencies": {
                         "application-configuration": "git+ssh://git@innersource.accenture.com/nmi/application-configuration.git",
                   }
@@ -28,7 +29,6 @@ This is the hackerNews microservice for the node microservices app
         
         test/ - contains the tests for the microservice
             test.js  - contains the test logic and examples.  
-                if this gets too big we should break it out into separate files
                 
         postman/ - contains a postman collection designed to demonstrate the capabilities of the microservice
             newman/ - contains a newman scipt to execute the postman collection
