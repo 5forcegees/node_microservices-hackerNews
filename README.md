@@ -43,7 +43,7 @@ This is the hackerNews microservice for the node microservices app
     
         // clone the gateway
         // --depth 1 removes all but one .git commit history
-        git clone --depth 1 ssh://git@innersource.accenture.com/nmi/hackernews.git
+        git clone --depth 1 git@github.com:5forcegees/node_microservices-hackerNews.git
         
         // change directory into the gateway
         cd hackernews
